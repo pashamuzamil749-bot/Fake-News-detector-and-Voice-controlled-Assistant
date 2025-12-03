@@ -58,7 +58,7 @@ def tell_joke():
     return pyjokes.get_joke()
 
 def get_weather(city="Bangalore"):
-    api_key = "YOUR_OPENWEATHER_API_KEY"  # Replace with your key
+    api_key = "44f76144b1872671abc60ba1bb3e00fc"  # Replace with your key
     url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric"
     try:
         response = requests.get(url).json()
@@ -203,3 +203,4 @@ if __name__ == "__main__":
     talk("Hello! I am your personal voice assistant. How can I help you today?")
     while True:
         run_assistant()
+
