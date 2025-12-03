@@ -71,7 +71,7 @@ def get_weather(city="Bangalore"):
         return "Network issue while fetching weather."
 
 def get_news():
-    api_key = "pub_895ab161c25b43e1b2384c49a183c544"  # Replace with your key
+    api_key = "6df3de5dde784bc599e2f6d042db9c65"  # Replace with your key
     url = f"https://newsapi.org/v2/everything?q=technology&language=en&apiKey={api_key}"
     try:
         response = requests.get(url).json()
@@ -203,4 +203,5 @@ if __name__ == "__main__":
     talk("Hello! I am your personal voice assistant. How can I help you today?")
     while True:
         run_assistant()
+
 
